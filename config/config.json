@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "weather-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/weatherWebpart/WeatherWebpartWebPart.js",
+          "manifest": "./src/webparts/weatherWebpart/WeatherWebpartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap"
+    }
+  },
+  "localizedResources": {
+    "WeatherWebpartWebPartStrings": "lib/webparts/weatherWebpart/loc/{locale}.js"
+  }
+}
